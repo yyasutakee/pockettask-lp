@@ -6,12 +6,19 @@
     <title>PocketTask</title>
     <link rel="icon" type="image/png" href="icon (1).png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             padding: 0;
             background-color: #000000;
             font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         
         .header {
@@ -22,12 +29,12 @@
         .logo {
             width: 190px;
             height: 190px;
-            margin-bottom: 15px;
+            margin-bottom: 0px;
         }
         
         .app-name {
             color: white;
-            font-size: 36px;
+            font-size: 30px;
             font-weight: bold;
             margin: 0;
         }
@@ -49,10 +56,14 @@
         }
         
         .catch-copy {
-            color: #808080;
-            font-size: 18px;
-            text-align: center;
-            margin: 20px 0;
+            color: white;
+            font-size: 20px;
+            text-align: left;
+            margin: 20px auto;
+            line-height: 1.6;
+            max-width: 820px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
         }
         
         .google-play {
@@ -72,10 +83,10 @@
         }
         
         .app-screenshot img {
-            max-width: 200px;
+            max-width: 150px;
             height: auto;
             border-radius: 10px;
-            margin: 0 10px;
+            margin: 0 5px;
             display: inline-block;
         }
         
@@ -163,17 +174,26 @@
             color: #9c27b0;
             font-size: 24px;
         }
+        
+        .footer {
+            text-align: center;
+            color: #808080;
+            font-size: 14px;
+            margin: 10px 0 20px 0;
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
-    <div class="header">
+    <div class="container">
+        <div class="header">
         <img src="icon (1).png" alt="TaskPocket Logo" class="logo">
         <h1 class="app-name">Pocket<span style="color: #00ff00;">Task</span></h1>
     </div>
     
-    <h2 class="main-title"><span class="rainbow-text">Enhance Your Life with PocketTask!</span></h2>
+    <h2 class="main-title">Enhance Your Life with Pocket<span style="color: #00ff00;">Task</span>!</h2>
     
-    <p class="catch-copy">Simple, clean and organizable task check list.</p>
+    <p class="catch-copy">PocketTask is a simple todo list that avoids complex functionality and instead focuses on basic core features with simple usage. The app is suitable for anyone who needs to quickly write down items such as daily tasks and shopping lists, or it can be used to capture ideas and create simple lists ⭐️</p>
     
     <div class="google-play">
         <img src="google_play_icon.jpg" alt="Get it on Google Play">
@@ -231,12 +251,22 @@
         </div>
     </div>
     
-    <div class="privacy">
-        <h3>Privacy</h3>
-        <p>
-            <span class="material-icons">security</span>
-            Secure your data on your device, the app doesn't any of data in cloud.
-        </p>
+    <!-- <div class="privacy"> -->
+    <!--     <h3>Privacy</h3> -->
+    <!--     <p> -->
+    <!--         <span class="material-icons">security</span> -->
+    <!--         Secure your data on your device, the app doesn't any of data in cloud. -->
+    <!--     </p> -->
+    <!-- </div> -->
+    
+    <div style="text-align: center; margin: 160px 0 0px 0;">
+        <a href="privacy.html" style="color: #cccccc; text-decoration: none; font-size: 14px; margin-right: 15px;">Privacy Policy</a>
+        <a href="contact.html" style="color: #cccccc; text-decoration: none; font-size: 14px;">Contact</a>
+    </div>
+    
+        <div class="footer">
+            © 2025 PocketTask by Yuhei Yasutake 😊
+        </div>
     </div>
 </body>
 </html>
