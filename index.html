@@ -140,6 +140,14 @@
             gap: 40px;
         }
         
+        /* Mobile layout: Stack features content above images */
+        @media (max-width: 600px) {
+            .features {
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+        
         .features-content {
             flex: 1;
         }
