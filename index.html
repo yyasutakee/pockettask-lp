@@ -83,11 +83,38 @@
         }
         
         .app-screenshot img {
-            max-width: 150px;
+            max-width: 135px;
             height: auto;
             border-radius: 10px;
-            margin: 0 5px;
+            margin: 0 8px;
             display: inline-block;
+        }
+        
+        /* Hide images by default and show based on screen size */
+        .app-screenshot img.blue { display: inline-block; }
+        .app-screenshot img.yellow { display: inline-block; }
+        .app-screenshot img.purple { display: inline-block; }
+        .app-screenshot img.green { display: inline-block; }
+        .app-screenshot img.red { display: none; } /* Hide red by default for smaller screens */
+        
+        /* Desktop: Show all 5 images */
+        @media (min-width: 1000px) {
+            .app-screenshot img.red { display: inline-block; }
+        }
+        
+        /* Medium screens: Show 4 images (blue, yellow, purple, green) */
+        @media (max-width: 800px) {
+            .app-screenshot img.green { display: none; }
+        }
+        
+        /* Small screens: Show 3 images (blue, yellow, purple) */
+        @media (max-width: 600px) {
+            .app-screenshot img.yellow { display: none; }
+        }
+        
+        /* Very small screens: Show only 1 image (purple) */
+        @media (max-width: 400px) {
+            .app-screenshot img.blue { display: none; }
         }
         
         .features {
@@ -222,11 +249,11 @@
     </div>
     
     <div class="app-screenshot">
-        <img src="images/blue.png" alt="Blue theme screenshot">
-        <img src="images/yellow.png" alt="Yellow theme screenshot">
-        <img src="images/purple.png" alt="Purple theme screenshot">
-        <img src="images/green.png" alt="Green theme screenshot">
-        <img src="images/red.png" alt="Red theme screenshot">
+        <img src="images/blue.png" alt="Blue theme screenshot" class="blue">
+        <img src="images/yellow.png" alt="Yellow theme screenshot" class="yellow">
+        <img src="images/purple.png" alt="Purple theme screenshot" class="purple">
+        <img src="images/green.png" alt="Green theme screenshot" class="green">
+        <img src="images/red.png" alt="Red theme screenshot" class="red">
     </div>
     
     <div class="about">
