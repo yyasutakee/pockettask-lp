@@ -60,19 +60,46 @@
         .app-screenshot {
             text-align: center;
             margin: 0;
+            padding: 20px;
         }
         
         .app-screenshot img {
-            max-width: 100%;
+            max-width: 200px;
             height: auto;
             border-radius: 10px;
+            margin: 0 10px;
+            display: inline-block;
         }
         
         .features {
             color: white;
-            max-width: 600px;
+            max-width: 1000px;
             margin: 40px auto;
             padding: 0 20px;
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+        }
+        
+        .features-content {
+            flex: 1;
+        }
+        
+        .features-image {
+            flex-shrink: 0;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            max-width: 400px;
+        }
+        
+        .features-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
         }
         
         .features h3 {
@@ -145,41 +172,55 @@
     </div>
     
     <div class="app-screenshot">
-        <img src="placeholder.png" alt="TaskPocket App Screenshots">
+        <img src="images/blue.png" alt="Blue theme screenshot">
+        <img src="images/yellow.png" alt="Yellow theme screenshot">
+        <img src="images/purple.png" alt="Purple theme screenshot">
+        <img src="images/green.png" alt="Green theme screenshot">
+        <img src="images/red.png" alt="Red theme screenshot">
     </div>
     
     <div class="features">
-        <h3>What you can</h3>
-        <ul class="feature-list">
-            <li class="feature-item">
-                <span class="material-icons">folder</span>
-                Create groups for your tasks.
-            </li>
-            <li class="feature-item">
-                <span class="material-icons">swipe</span>
-                Change task groups by swipe.
-            </li>
-            <li class="feature-item">
-                <span class="material-icons">push_pin</span>
-                Pin your tasks to prioritize them.
-            </li>
-            <li class="feature-item">
-                <span class="material-icons">view_list</span>
-                See all tasks on one place.
-            </li>
-            <li class="feature-item">
-                <span class="material-icons">palette</span>
-                Change color theme as your preference.
-            </li>
-            <li class="feature-item">
-                <span class="material-icons">import_export</span>
-                Export/Import your tasks not to lose your data.
-            </li>
-            <li class="feature-item">
-                <span class="material-icons">tune</span>
-                Tweak the design as your choice.
-            </li>
-        </ul>
+        <div class="features-content">
+            <h3>What you can</h3>
+            <ul class="feature-list">
+                <li class="feature-item">
+                    <span class="material-icons">folder</span>
+                    Create groups for your tasks.
+                </li>
+                <li class="feature-item">
+                    <span class="material-icons">swipe</span>
+                    Change task groups by swipe.
+                </li>
+                <li class="feature-item">
+                    <span class="material-icons">push_pin</span>
+                    Pin your tasks to prioritize them.
+                </li>
+                <li class="feature-item">
+                    <span class="material-icons">view_list</span>
+                    See all tasks on one place.
+                </li>
+                <li class="feature-item">
+                    <span class="material-icons">palette</span>
+                    Change color theme as your preference.
+                </li>
+                <li class="feature-item">
+                    <span class="material-icons">import_export</span>
+                    Export/Import your tasks not to lose your data.
+                </li>
+                <li class="feature-item">
+                    <span class="material-icons">tune</span>
+                    Tweak the design as your choice.
+                </li>
+            </ul>
+        </div>
+        <div class="features-image">
+            <div class="features-grid">
+                <img src="images/groups.png" alt="Groups feature screenshot">
+                <img src="images/pin.png" alt="Pin feature screenshot">
+                <img src="images/switch.png" alt="Switch groups feature screenshot">
+                <img src="images/color.png" alt="Color theme feature screenshot">
+            </div>
+        </div>
     </div>
     
     <div class="privacy">
