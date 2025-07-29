@@ -74,6 +74,20 @@
         .google-play img {
             height: 90px;
             cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+        
+        .google-play img:hover {
+            transform: scale(1.05);
+        }
+        
+        a {
+            cursor: pointer;
+            transition: color 0.2s ease;
+        }
+        
+        a:hover {
+            color: #ffffff !important;
         }
         
         .app-screenshot {
@@ -88,6 +102,12 @@
             border-radius: 10px;
             margin: 0 12px;
             display: inline-block;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+        
+        .app-screenshot img:hover {
+            transform: scale(1.05);
         }
         
         /* Hide images by default and show based on screen size */
@@ -266,7 +286,9 @@
     <p class="catch-copy">Simple, clean and organizable task check list.</p>
     
     <div class="google-play">
-        <img src="appstore_icon.svg" alt="Get it on App Store">
+        <a href="https://apps.apple.com/app/id6748934569" target="_blank">
+            <img src="appstore_icon.svg" alt="Get it on App Store">
+        </a>
     </div>
     
     <div class="app-screenshot">
